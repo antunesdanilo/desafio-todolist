@@ -1,38 +1,5 @@
 # TodoList
 
-## Avaliação do Escopo
-
-Foi feita a avaliação do pedido do cliente, e após trocas de mensagens para esclarecer alguns pontos, partimos para a etapa de planejamento, e após o detalhamento das atividades a serem executadas, estimamos que serão necessárias 80 horas de trabalho, distribuídas ao longo de 13 dias úteis, sendo que as atividades foram divididas da seguinte forma:
-
-- Definição do escopo e plano de trabalho: 4 horas
-
-- Modelagem de dados e operacionalização dos esquemas no sistema gerenciador: 4 horas
-
-Deverá ser possível ao usuário criar uma conta e se autenticar no aplicativo: 12 horas, assim distribuídas:
-- Criação da conta: 4 horas
-- Autenticação no aplicativo: 4 horas
-- Validação de token criado no processo de autenticação: 2 horas
-- Logout, com destruição do token criado no processo de autenticação: 2 horas
-
-Durante o carregamento inicial da aplicação, será mostrada uma tela de boas-vindas, enquanto é verificado em background se há um token válido armazenado em um cookie do navegador: 4 horas
-
-O usuário autenticado deverá visualizar no topo da tela um menu, em que deverá haver os links para as páginas “Tela Inicial”, “Sobre” e “Atividades”, além de um avatar, o nome do usuário logado e um botão para efetuar logout: 4 horas
-
-O usuário autenticado deverá visualizar uma tela inicial, com explicações sobre como criar uma nova lista, editar uma já existente e excluir: 4 horas
-
-Deverá ser possível ao usuário autenticado criar e gerenciar uma lista de tarefas, bem como compartilhá-la com outros usuários: 40 horas, assim distribuídas:
-- Enumerar as listas criadas pelo usuário e as que tenham sido compartilhadas com ele: 4 horas
-- Criação da lista, com informação do nome e url: 6 horas
-- Visualização da lista vazia, após a sua criação: 2 horas
-- Inserir uma atividade na lista ou uma sub-atividade como item filho de uma atividade: 4 horas
-- Remover da lista uma atividade ou subatividade que seja sua: 4 horas
-- Transformar uma atividade em sub-atividade, e vice-versa, através de movimentos com o mouse: 4 horas
-- Marcar/desmarcar como feita uma atividade ou sub-atividade: 2 horas
-- Excluir uma lista que seja sua: 4 horas
-- Compartilhar uma lista por e-mail, para uma ou mais pessoas: 6 horas
-
-Testes automatizados: 12 horas
-
 ## Sobre
 
 Esta aplicação tem como objetivo permitir que o usuário faça o gerenciamento de uma lista de tarefas, divisão de tarefas, com definição de prazo e a possibilidade de marcar a tarefa como feita, além da possibilidade de compartilhar a lista criada com um ou mais usuários para que possam colaborar.
@@ -58,7 +25,7 @@ A demonstração está  hospedada <a href="http://desafio-todolist.socialfitness
 
 ```bash
 # Clonar o repositório
-$ git clone https://git.vibbra.com.br/danilo-1647822560/to-do-list.git
+$ git clone https://github.com/antunesdanilo/desafio-todolist
 
 # Instalar as dependências do backend
 $ cd backend && npm install
@@ -91,7 +58,7 @@ NPM
 
 ```bash
 # Entrar no diretório do projeto
-$ cd to-do-list
+$ cd desafio-todolist
 
 # Fazer o build das imagens e criar os containers
 $ docker-compose up -d --build
@@ -101,7 +68,7 @@ $ docker-compose up -d --build
 
 ```bash
 # Entrar no diretório do projeto
-$ cd to-do-list
+$ cd desafio-todolist
 
 # Entrar no sub-diretório backend
 $ cd backend
@@ -134,10 +101,10 @@ NPM
 
 ```bash
 # Clonar o repositório
-$ git clone https://git.vibbra.com.br/danilo-1647822560/to-do-list.git
+$ git clone https://github.com/antunesdanilo/desafio-todolist
 
 # Entrar no diretório do projeto
-$ cd to-do-list
+$ cd desafio-todolist
 
 # Iniciar o backend
 $ cd backend && npm run dev
@@ -154,7 +121,7 @@ Acessar <a href="http://localhost" target="_blank">localhost</a>
 
 ```bash
 # Entrar no diretório do projeto
-$ cd to-do-list
+$ cd desafio-todolist
 
 # Entrar no sub-diretório backend
 $ cd backend
@@ -170,7 +137,7 @@ $ npm run test
 
 ```bash
 # Entrar no diretório do projeto
-$ cd to-do-list
+$ cd desafio-todolist
 
 # Execução do servidor de testes do backend em ambiente de testes
 $ cd backend && npm run dev-test
