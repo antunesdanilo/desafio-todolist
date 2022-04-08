@@ -6,7 +6,7 @@ import notifyService from './notify.service';
 export default class BaseService {
   public cookies = new Cookies();
 
-  public url: string = 'http://localhost:3333';
+  public url: string = process.env.REACT_APP_API_HOST || 'http://localhost:3333';
 
   private axios: any;
 
