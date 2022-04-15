@@ -15,8 +15,8 @@ const TodoForm: React.FC = () => {
 
   const viewTodo = async (): Promise<void> => {
     if (parseInt(params.id || '', 10)) {
-      todoService.viewTodo(parseInt(params.id || '', 10)).then((r) => {
-        const todo = r as any as TodoInterface;
+      todoService.viewTodo(parseInt(params.id || '', 10)).then((r: any) => {
+        const todo = r.todo as any as TodoInterface;
         setValue('name', todo.name);
         setValue('url', todo.url);
       });

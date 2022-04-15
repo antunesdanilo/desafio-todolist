@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter, ModalTitle } from 'react-bootstrap';
+import { Modal, ModalHeader, ModalBody, ModalTitle } from 'react-bootstrap';
 
 import TodoInterface from '../Interfaces/todo.interface';
 import SharingInterface from '../Interfaces/sharing.interface';
@@ -109,7 +109,6 @@ const ShareModal: React.FC<{ show: boolean; todo: TodoInterface; onHidePress: Fu
           </tbody>
         </table>
       </ModalBody>
-      <ModalFooter>This is the footer</ModalFooter>
     </Modal>
   );
 };
