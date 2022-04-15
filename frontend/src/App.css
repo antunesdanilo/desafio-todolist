@@ -1,3 +1,8 @@
+body {
+  min-height: 100vh;
+  background-color: #F8F9FA;
+}
+
 [type="checkbox"],
 i.bi-arrow-left,
 i.bi-pencil,
@@ -90,7 +95,7 @@ h1 {
 /* Footer */
 
 footer {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
   background-color: #F8F9FA;
 }
@@ -105,7 +110,7 @@ footer .row :first-child {
 #secao-principal {
   background-color: #F8F9FA;
   padding: 0px 40px;
-  min-height: 85vh;
+  min-height: 82.5vh;
 }
 
 h2 {
