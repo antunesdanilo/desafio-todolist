@@ -19,13 +19,13 @@ A aplicação foi "containerizada", e as imagens criadas foram enviadas ao Elast
 
 Foi usado o Elastic Container Service, também da AWS, para orquestração dos containeres.
 
-A demonstração está  hospedada <a href="http://desafio-todolist.socialfitness.com.br" target="_blank">aqui</a>.
+A demonstração está  hospedada <a href="http://todolist.daniloantunes.dev.br" target="_blank">aqui</a>.
 
 ## Download
 
 ```bash
 # Clonar o repositório
-$ git clone https://github.com/antunesdanilo/desafio-todolist
+$ git clone https://github.com/antunesdanilo/todolist
 
 # Instalar as dependências do backend
 $ cd backend && npm install
@@ -58,7 +58,7 @@ NPM
 
 ```bash
 # Entrar no diretório do projeto
-$ cd desafio-todolist
+$ cd todolist
 
 # Fazer o build das imagens e criar os containers
 $ docker-compose up -d --build
@@ -68,7 +68,7 @@ $ docker-compose up -d --build
 
 ```bash
 # Entrar no diretório do projeto
-$ cd desafio-todolist
+$ cd todolist
 
 # Entrar no sub-diretório backend
 $ cd backend
@@ -101,10 +101,10 @@ NPM
 
 ```bash
 # Clonar o repositório
-$ git clone https://github.com/antunesdanilo/desafio-todolist
+$ git clone https://github.com/antunesdanilo/todolist
 
 # Entrar no diretório do projeto
-$ cd desafio-todolist
+$ cd todolist
 
 # Iniciar o backend
 $ cd backend && npm run dev
@@ -121,7 +121,7 @@ Acessar <a href="http://localhost" target="_blank">localhost</a>
 
 ```bash
 # Entrar no diretório do projeto
-$ cd desafio-todolist
+$ cd todolist
 
 # Entrar no sub-diretório backend
 $ cd backend
@@ -137,7 +137,7 @@ $ npm run test
 
 ```bash
 # Entrar no diretório do projeto
-$ cd desafio-todolist
+$ cd todolist
 
 # Execução do servidor de testes do backend em ambiente de testes
 $ cd backend && npm run dev-test

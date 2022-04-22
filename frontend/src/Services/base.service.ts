@@ -8,6 +8,8 @@ export default class BaseService {
 
   public url: string = process.env.REACT_APP_API_HOST || 'http://localhost:3333';
 
+  public path: string = '';
+
   private axios: any;
 
   public headers = {};
@@ -22,6 +24,7 @@ export default class BaseService {
   }
 
   async http(metodo: string, path: string, dados: any = null) {
+    this.path = path;
     if (metodo !== 'get') {
       notifyService.loading();
     }
@@ -71,6 +74,7 @@ export default class BaseService {
     }
     if (
       window.location.pathname !== '/login' &&
+      this.path !== '/auth/login/token' &&
       (e.code === 401 || e.message === 'E_UNAUTHORIZED_ACCESS: Unauthorized access')
     ) {
       window.location.replace('/login');
